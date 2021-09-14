@@ -1,0 +1,114 @@
+/* 1024 - 1199 */
+@media screen and (max-width: 1199px) {
+   footer {
+      .footer-maps {
+         .footer-map {
+            iframe {
+               width: 600px;
+               height: 300px;
+               
+            }
+         }
+      }
+   }
+}
+
+
+/* 768 - 1023 */
+@media screen and (max-width: 1023px) {
+   header {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-top: 30px;
+      .header-nav {
+         order: 1;
+         margin-top: 30px;
+         margin-bottom: 20px;
+      }
+
+   }
+   .main {
+      .main-text {
+         margin-left: 63px;
+         .main-text-title {
+            font-size: 25px;
+            line-height: 1.1;
+         }
+         .main-text-descr {
+            font-size: 16px;
+            line-height: 1.1;
+         }
+      }
+      .main-img {
+         height: 450px;
+      }
+   }
+   .main-strong,
+   .main-club {
+      font-size: 100px;
+   }
+   .advantages {
+      padding: 40px 0;
+   }
+   .about {
+      padding-bottom: 70px;
+      .about-title {
+         font-size: 25px;
+      }
+      .about-items {
+         flex-direction: column;
+         align-items: center;
+         .about-items-benefits {
+            margin-right: 0;
+            .benefits-img {
+               margin-bottom: 50px;
+               max-width: 400px;
+               margin-left: auto;
+               margin-right: auto;
+               img {
+                  width: 100%;
+               }
+            }
+            .benefits-items {
+               margin-bottom: 40px;
+               .benefits-item {
+                  font-size: 16px;
+               }
+            }
+         }
+         .about-items-description {
+            .description-img {
+               margin: 0 auto;
+               max-width: 150px;
+               img {
+                  max-width: 100%;
+               }
+            }
+         }
+      }
+   }
+}
+
+
+/* 580 - 767 */
+@media screen and (max-width: 767px) {
+
+}
+
+
+/* 480 - 579 */
+@media screen and (max-width: 579px){
+
+}
+
+
+/* 480 - 499 */
+@media screen and (max-width: 499px){
+
+}
+
+
+/* 320 - 479 */
+@media screen and (max-width: 479px){
+
+}

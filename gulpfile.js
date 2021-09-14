@@ -9,7 +9,7 @@ const concatCss = require('gulp-concat-css');
 sass.compiler = require('node-sass');
 
 exports.sass = function () {
-   return src(['./src/styles/main.scss'])
+   return src(['./src/styles/main.scss', './src/styles/adaptive.scss'])
      .pipe(sass().on('error', sass.logError))
      .pipe(concatCss("main.css"))
      .pipe(cssmin())

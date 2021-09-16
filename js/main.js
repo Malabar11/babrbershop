@@ -5,6 +5,35 @@ $(document).ready(() => {
     slidesToShow: 3,
     arrows: true,
     dots: true,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          arrows: false,
+          centerMode: true,
+          
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          dots: true,
+          slidesToShow: 1,
+          arrows: false,
+          centerMode: true,
+          
+        }
+      }
+    ]
   });
 
 
@@ -102,4 +131,15 @@ $(document).ready(() => {
       if (e.target.id === 'rebate-container' || e.target.id === 'rebate-cancel-close')
       $('#rebate-container').hide();
     });
+
+      $('#burger').click(() => {
+        $('.nav-list').addClass('open');
+      })
+      document.querySelectorAll('.nav-list > *').forEach((item) => {
+        item.onclick = () => {
+          $('.nav-list').removeClass('open')
+        }
+     })
+      
+   
 });

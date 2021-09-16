@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
    <link rel="stylesheet" href="style/slick.css">
    <link rel="stylesheet" href="style/slick-theme.css">
    <link rel="stylesheet" href="style/main.min.css">
@@ -14,31 +15,61 @@
 <body>
    <div class="bg">
       <div class="wrapper">
-         <header>
+         <header class="wow animate__bounce">
+            <div id="burger">
+               <svg id="Layer_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="m464.883 64.267h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z">
+                  </path>
+                  <path
+                     d="m464.883 208.867h-417.766c-25.98 0-47.117 21.136-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.013-21.137-47.149-47.117-47.149z">
+                  </path>
+                  <path
+                     d="m464.883 353.467h-417.766c-25.98 0-47.117 21.137-47.117 47.149 0 25.98 21.137 47.117 47.117 47.117h417.766c25.98 0 47.117-21.137 47.117-47.117 0-26.012-21.137-47.149-47.117-47.149z">
+                  </path>
+               </svg>
+            </div>
             <div class="header-logo logo">
                <a href="#">Strong club Barbershop</a>
             </div>
             <div class="header-nav">
                <ul class="nav-list">
+                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 492 492"
+                     style="enable-background:new 0 0 492 492;" xml:space="preserve">
+                     <g>
+                        <g>
+                           <path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+               c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+               c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+               L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+               c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+               c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+               c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"></path>
+                        </g>
+                     </g>
+
+                  </svg>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Услуги</a>
+                     <a class="nav-link" href="#price">Услуги</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Цены</a>
+                     <a class="nav-link" href="#price">Цены</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Барберы</a>
+                     <a class="nav-link" href="#masters">Барберы</a>
                   </li>
                   <li class="nav-item">
-                     <a class="nav-link" href="#">О нас</a>
+                     <a class="nav-link" href="#about">О нас</a>
                   </li>
                </ul>
             </div>
             <div class="header-action">
-               <a href="#"><img src="img/header-tel.png" alt="tel-icon"> +7 912 816-93-96 </a>
+               <a href="#"><img src="img/header-tel.png" alt="tel-icon"> <span>+7 912 816-93-96</span> </a>
             </div>
          </header>
-         <section class="main">
+         <section class="main wow animate__headShake">
             <div class="main-strong">
                STRONG
             </div>
@@ -61,7 +92,7 @@
             </div>
          </section>
       </div>
-      <section class="advantages">
+      <section class="advantages wow animate__backInLeft">
          <div class="wrapper">
             <div class="advantage">
                <div class="advantage-img">
@@ -91,8 +122,8 @@
 
       </section>
       <div class="wrapper">
-         <section class="about">
-            <div class="about-title">
+         <section class="about wow animate__backInUp" >
+            <div class="about-title" id="about">
                Strong Club – это намного больше, чем просто мужская парикмахерская
             </div>
             <div class="about-items">
@@ -105,21 +136,21 @@
                         <div class="benefits-item-img">
                            <img src="img/item-cup.png" alt="">
                         </div>
-                        
+
                         <span>Мы предложим вам чашечку кофе или чая</span>
                      </div>
                      <div class="benefits-item">
                         <div class="benefits-item-img">
                            <img src="img/item-salon.png" alt="">
                         </div>
-                        
+
                         <span>Мы пострижем и побреем вас по всем европейским традициям</span>
                      </div>
                      <div class="benefits-item">
                         <div class="benefits-item-img">
                            <img src="img/item-interface.png" alt="">
                         </div>
-                        
+
                         <span>И скоро вы снова захотите вернуться в наш барбершоп</span>
                      </div>
                   </div>
@@ -147,18 +178,18 @@
             </div>
          </section>
       </div>
-      <section class="social">
+      <section class="social wow animate__backInRight">
          <div class="wrapper">
             <div class="social-text">
                Следи за нами в <span>Instagram</span>, чтобы быть в курсе всех акций!
             </div>
             <div class="social-btn btn">
-               <a  href="#">Подписаться</a>
+               <a href="#">Подписаться</a>
             </div>
          </div>
       </section>
       <div class="wrapper">
-         <div class="price">
+         <div class="price wow animate__backInDown" id="price">
             <div class="price-title">
                Прайс на наши услуги
             </div>
@@ -177,20 +208,20 @@
                         </div>
                      </div>
                      <div class="price-service-s">
-                        подбор стрижки, 2 мытья, укладка 
+                        подбор стрижки, 2 мытья, укладка
                      </div>
                   </div>
                   <div class="price-service">
                      <div class="price-service-l">
                         <div class="price-service-text">
                            Стрижка удлиненная
-                           </div>
+                        </div>
                         <div class="price-service-count">
                            2 100 руб.
                         </div>
                      </div>
                      <div class="price-service-s">
-                        подбор стрижки, 2 мытья, укладка 
+                        подбор стрижки, 2 мытья, укладка
                      </div>
                   </div>
                   <div class="price-service">
@@ -203,7 +234,7 @@
                         </div>
                      </div>
                      <div class="price-service-s">
-                        без ножниц 
+                        без ножниц
                      </div>
                   </div>
                   <div class="price-service">
@@ -216,7 +247,7 @@
                         </div>
                      </div>
                      <div class="price-service-s">
-                        от 4 до 14 лет включительно, <br> не удлиненная 
+                        от 4 до 14 лет включительно, <br> не удлиненная
                      </div>
                   </div>
                   <div class="price-service">
@@ -229,7 +260,7 @@
                         </div>
                      </div>
                      <div class="price-service-s">
-                        с распариванием и окантовкой бритвой шаветт 
+                        с распариванием и окантовкой бритвой шаветт
                      </div>
                   </div>
                   <div class="price-service">
@@ -276,7 +307,7 @@
                            <div class="price-service-count">
                               2 500 pуб.
                            </div>
-                        </div>  
+                        </div>
                      </div>
                      <div class="price-service">
                         <div class="price-service-l">
@@ -313,7 +344,7 @@
                            </div>
                         </div>
                         <div class="price-service-s">
-                           удаление нежелательных волос на лице 
+                           удаление нежелательных волос на лице
                         </div>
                      </div>
                      <div class="price-service">
@@ -326,7 +357,7 @@
                            </div>
                         </div>
                         <div class="price-service-s">
-                           предварительная консультация с мастером 
+                           предварительная консультация с мастером
                         </div>
                      </div>
                      <div class="price-service">
@@ -340,15 +371,15 @@
                         </div>
                      </div>
                   </div>
-                  
+
                </div>
             </div>
          </div>
       </div>
-      <div class="discount">
+      <div class="discount wow animate__backInRight">
          <div class="wrapper">
             <div class="discount-text">
-               Вы у нас первый раз? Получите <span>скидку 15%</span> 
+               Вы у нас первый раз? Получите <span>скидку 15%</span>
             </div>
             <div class="discount-btn">
                <button class="btn">Получить скидку</button>
@@ -356,27 +387,29 @@
          </div>
       </div>
       <div class="wrapper">
-         <div class="masters">
+         <div class="masters" id="masters">
             <div class="masters-title">
                Наши мастера
             </div>
             <div class="masters-subtitle">
-               Вот они, простые герои, несущие в мир стиль и безупречный внешний вид. Команда Barber Club каждый день трудится над тем, чтобы создавать и поддерживать ваш индивидуальный стиль, подчеркивать характер и превращать недостатки в достоинства.
+               Вот они, простые герои, несущие в мир стиль и безупречный внешний вид. Команда Barber Club каждый день
+               трудится над тем, чтобы создавать и поддерживать ваш индивидуальный стиль, подчеркивать характер и
+               превращать недостатки в достоинства.
             </div>
             <div class="masters-block">
                <div class="master">
                   <div class="master-img">
                      <img src="img/marat.png" alt="">
                      <div class="master-action">
-                        <div class="master-action-name">
+                        <div class="master-action-name ">
                            Марат
                         </div>
-                        <div class="master-action-btn">
+                        <div class="master-action-btn open-modal">
                            <button>Записаться</button>
                         </div>
                      </div>
                   </div>
-                  
+
                </div>
                <div class="master">
                   <div class="master-img">
@@ -385,12 +418,40 @@
                         <div class="master-action-name">
                            Екатерина
                         </div>
-                        <div class="master-action-btn">
+                        <div class="master-action-btn open-modal">
                            <button>Записаться</button>
                         </div>
                      </div>
                   </div>
-                 
+
+               </div>
+               <div class="master">
+                  <div class="master-img">
+                     <img src="img/aleks.png" alt="">
+                     <div class="master-action">
+                        <div class="master-action-name ">
+                           Алексей
+                        </div>
+                        <div class="master-action-btn open-modal">
+                           <button>Записаться</button>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="master">
+                  <div class="master-img">
+                     <img src="img/katya.png" alt="">
+                     <div class="master-action">
+                        <div class="master-action-name ">
+                           Екатерина
+                        </div>
+                        <div class="master-action-btn open-modal">
+                           <button>Записаться</button>
+                        </div>
+                     </div>
+                  </div>
+
                </div>
                <div class="master">
                   <div class="master-img">
@@ -399,26 +460,82 @@
                         <div class="master-action-name">
                            Алексей
                         </div>
-                        <div class="master-action-btn">
+                        <div class="master-action-btn open-modal">
                            <button>Записаться</button>
                         </div>
                      </div>
                   </div>
-                  
+
+               </div>
+               <div class="master">
+                  <div class="master-img">
+                     <img src="img/katya.png" alt="">
+                     <div class="master-action">
+                        <div class="master-action-name">
+                           Екатерина
+                        </div>
+                        <div class="master-action-btn open-modal">
+                           <button>Записаться</button>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="master">
+                  <div class="master-img">
+                     <img src="img/aleks.png" alt="">
+                     <div class="master-action">
+                        <div class="master-action-name">
+                           Алексей
+                        </div>
+                        <div class="master-action-btn open-modal">
+                           <button>Записаться</button>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="master">
+                  <div class="master-img">
+                     <img src="img/katya.png" alt="">
+                     <div class="master-action">
+                        <div class="master-action-name">
+                           Екатерина
+                        </div>
+                        <div class="master-action-btn open-modal">
+                           <button>Записаться</button>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               <div class="master">
+                  <div class="master-img">
+                     <img src="img/aleks.png" alt="">
+                     <div class="master-action">
+                        <div class="master-action-name">
+                           Алексей
+                        </div>
+                        <div class="master-action-btn open-modal">
+                           <button>Записаться</button>
+                        </div>
+                     </div>
+                  </div>
+
                </div>
                <div class="master">
                   <div class="master-img">
                      <img src="img/marat.png" alt="">
                      <div class="master-action">
-                        <div class="master-action-name">
+                        <div class="master-action-name ">
                            Марат
                         </div>
-                        <div class="master-action-btn">
+                        <div class="master-action-btn open-modal">
                            <button>Записаться</button>
                         </div>
                      </div>
                   </div>
-                  
+
                </div>
             </div>
          </div>
@@ -452,7 +569,9 @@
                   </div>
                </div>
                <div class="footer-map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7782.410630160736!2d30.704265772087094!3d46.39918743834446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633b5ae098fe5%3A0x713ead0a29005131!2sBarbershop%20Hasib!5e0!3m2!1sru!2sua!4v1631536542570!5m2!1sru!2sua"  style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                  <iframe
+                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7782.410630160736!2d30.704265772087094!3d46.39918743834446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c633b5ae098fe5%3A0x713ead0a29005131!2sBarbershop%20Hasib!5e0!3m2!1sru!2sua!4v1631536542570!5m2!1sru!2sua"
+                     style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                </div>
             </div>
             <div class="footer-by">
@@ -520,7 +639,7 @@
                </div>
                <div class="reserve-input reserve-input-select">
                   <select name="time" id="reserve-time">
-                     <option value="error" selected >Выберете время</option>
+                     <option value="error" selected>Выберете время</option>
                      <option value="10:00-11:00">10:00-11:00</option>
                      <option value="11:00-12:00">11:00-12:00</option>
                      <option value="12:00-13:00">12:00-13:00</option>
@@ -542,7 +661,16 @@
          </div>
       </div>
    </div>
-   <div id="loader" class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+   <div id="loader" class="lds-roller">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+   </div>
 
    <div id="tnanks-container">
       <div class="thanks">
@@ -573,10 +701,23 @@
          </div>
       </div>
    </div>
+   
+   <script>
+      new WOW().init();
+   </script>
 
+   <script src="js/wow.min.js"></script>
    <script src="js/jquery-3.6.0.min.js"></script>
    <script src="js/slick.min.js"></script>
    <script src="js/main.js"></script>
+   <script>
+      new WOW(
+         {
+            animateClass: 'animate__animated'
+         }
+        
+      ).init();
+   </script>
 </body>
 
 </html>

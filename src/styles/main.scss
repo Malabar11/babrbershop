@@ -53,11 +53,19 @@ header {
    justify-content: space-between;
    align-items: center;
    padding-top: 60px;
+   #burger {
+      display: none;
+      svg {
+         width: 32px;
+         height: 32px;
+         fill: #ffffff;
+      }
+   }
    .header-nav {
       .nav-list {
          display: flex;
          justify-content: space-between;
-         
+         list-style-type: none;
          .nav-item {
             margin: 0 20px;
 
@@ -71,6 +79,9 @@ header {
                   border-bottom: 1px solid #ae8959;
                }
             }
+         }
+         svg {
+            display: none;
          }
       }
    }
@@ -174,6 +185,12 @@ header {
          margin-right: 68px;
          .benefits-img {
             margin-bottom: 72px;
+            &:hover {
+               img {
+                  transform: scale(1.1);
+                  transition:  linear 0.3s;
+               }
+            }
          }
          .benefits-items {
             .benefits-item {
@@ -233,11 +250,12 @@ header {
          }
       }
       .social-btn {
-         display: flex;
+         /* display: flex;
          justify-content: center;
-         align-items: center;
+         align-items: center; */
          a {
             text-decoration: none;
+            line-height: 60px;
             text-align: center;
             font-size: 18px;
             font-family: "MullerBold";
@@ -341,9 +359,13 @@ header {
 
    }
    .masters-block {
-      max-width: 1004px;
+      max-width: 904px;
       margin: 0 auto;
+      .slick-list.draggable {
+         padding: 0 0 0 0 !important;
+      }
       .master {
+         margin: 0 auto;
 
          position: relative;
          &.slick-slide {
@@ -351,8 +373,10 @@ header {
             padding-bottom: 50px;
          }
          .master-img {
-            width: 291px;
-            height: 404px;
+            width: 350px;
+            height: 484px;
+            transform: scale(0.8);
+            margin: 0 auto;
             img {
                width: 100%;
                height: 100%;
@@ -363,6 +387,7 @@ header {
             bottom: 0;
             padding: 20px 64px;
             background-color: rgba(0, 0, 0, 0.5);
+            width: 100%;
             
             .master-action-name {
                font-size: 20px;
@@ -372,23 +397,43 @@ header {
                margin-bottom: 20px;
             }
             .master-action-btn {
+               width: 167px;
+               margin: 0 auto;
                button {
                   border-width: 1px;
                   border-color: rgb(174, 137, 89);
                   border-style: solid;
-                  width: 163px;
+                  width: 167px;
                   background: transparent;
                   font-size: 16px;
                   font-family: "MullerBold", sans-serif;
                   color: rgb(255, 255, 255);
                   text-align: center;
                   padding: 14px 0;
+                  &:hover {
+                     background: rgb(174, 137, 89)
+                  }
 
                }
             }
          }
          &.slick-center {
-            transform: scale(1.3);
+            position: relative;
+            z-index: 1;
+            .master-img {
+               transform: scale(0.95);
+               transform-origin: center bottom;
+            }
+            .master-action {
+               padding: 30px 64px;
+               .master-action-name {
+                  font-size: 25px;
+                  margin-bottom: 30px;
+               }
+               .master-action-btn {
+
+               }
+            }
          }
       }
    }
@@ -396,9 +441,13 @@ header {
 .slick-prev:before {
    content: url(../../img/prev-arrow.png);
 }
+.slick-prev {
+   left: 261px;
+    top: 567px;
+}
 .slick-next {
-   right: 393px;
-   top: 508px;
+   right: 261px;
+   top: 567px;
 }
 .slick-next:before {
    content: url(../../img/next-arrow.png);
@@ -408,7 +457,7 @@ header {
    display: flex;
    align-items: center;
    justify-content: center;
-   bottom: -70px;
+   bottom: 0px;
 }
 .slick-dots li {
    border-width: 1px;
@@ -466,6 +515,12 @@ footer {
                display: flex;
                justify-content: space-evenly;
                margin-top: 20px;
+               a {
+                  &:hover {
+                     opacity: 0.9;
+                  }
+               }
+               
             }
          }
          .footer-text-mail {
@@ -638,7 +693,7 @@ footer {
    align-items: center;
    .thanks {
       background: url(../../img/eserve-bg.png);
-      width: 1004px;
+      max-width: 1004px;
       position: relative;
       padding: 60px 98px;
       .thanks-cancel {

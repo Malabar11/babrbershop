@@ -1,5 +1,14 @@
 /* 1024 - 1199 */
 @media screen and (max-width: 1199px) {
+   header {
+      justify-content: space-between;
+      .logo {
+         margin: 0;
+      }
+      .header-nav {
+         margin: 0;
+      }
+   }
    footer {
       .footer-maps {
          .footer-map {
@@ -12,25 +21,76 @@
       }
    }
 }
-
+@media screen and (max-width: 1023px) {
+   .advantages {
+      .wrapper {
+         .advantage {
+            .advantage-text {
+               width: 142px;
+            }
+            
+         }
+      }
+   }
+}
 
 /* 768 - 1023 */
 @media screen and (max-width: 1023px) {
    header {
-      .logo {
-         margin-right: 300px;
-      }
-      flex-wrap: wrap;
+      display: flex;
       justify-content: space-evenly;
-      padding-top: 30px;
-      .header-nav {
-         order: 1;
-         margin-top: 30px;
-         margin-bottom: 20px;
+      #burger {
+         display: block;
+         order: 2;
       }
-
+      .logo {
+         margin: 0;
+      }
+      .header-logo {
+         order: 1;
+      }
+      .header-nav {
+         display: none;
+         margin: 0;
+         .nav-list {
+            display: none;
+         }
+         .nav-list.open {
+            z-index: 200000;
+            display: flex;
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0;
+            padding-top: 30px;
+            background-color: #050505f3;
+            top: 0;
+            left: 0;
+            padding-left: 0;
+            .nav-item {
+               margin: 15px 5px;
+            }
+            svg {
+               display: block;
+               width: 24px;
+               height: 24px;
+               fill: rgb(164, 107, 0);
+               position: absolute;
+               top: 20px;
+               left: 20px;
+               fill: #fff;
+            }
+         }
+      }
+      .header-action {
+         order: 3;
+      }
    }
    .main {
+      margin-top: 50px;
       .main-text {
          margin-left: 63px;
          .main-text-title {
@@ -54,6 +114,9 @@
       padding: 40px 0;
    }
    .about {
+      margin: 0 auto;
+      max-width: 470px;
+      border: unset;
       padding-bottom: 70px;
       .about-title {
          font-size: 25px;
@@ -65,7 +128,6 @@
             margin-right: 0;
             .benefits-img {
                margin-bottom: 50px;
-               max-width: 400px;
                margin-left: auto;
                margin-right: auto;
                img {
@@ -73,9 +135,18 @@
                }
             }
             .benefits-items {
+               
                margin-bottom: 40px;
                .benefits-item {
                   font-size: 16px;
+                  span {
+                     max-width: 420px;
+                  }
+                  .benefits-item-img {
+                     width: 31px;
+                     height: 28px;
+                     
+                  }
                }
             }
          }
@@ -96,11 +167,12 @@
          .social-text {
             margin-right: 0;
             font-size: 18px;
-            max-width: 223px;
+            margin-left: 0;
          }
       }
    }
    .price {
+      border: unset;
       .price-title {
          font-size: 25px;
          margin-top: 70px;
@@ -118,12 +190,22 @@
          .discount-text {
             margin-right: 0;
             font-size: 18px;
-            max-width: 223px;
+            margin-left: 0;
          }
       }
    }
+   .slick-prev {
+      left: 0px;
+       top: 527px;
+       z-index: 100;
+   }
+   .slick-next {
+      right: 0px;
+       top: 527px;
+       z-index: 100;
+   }
    .masters {
-      padding-bottom: 70px;
+      border: unset;
       .masters-title {
          font-size: 25px;
          margin-bottom: 40px;
@@ -131,6 +213,27 @@
       }
       .masters-subtitle {
          font-size: 16px;
+      }
+      .masters-block {
+         max-width: 460px;
+         .master {
+            &.slick-center {
+               .master-img.master-katya {
+
+                  .master-action {
+                     left: 58px;
+                  }
+                  
+                  
+               }
+               .master-img.master-aleks {
+
+                  .master-action {
+                     left: 58px;
+                  }
+                  
+               }   }
+         }
       }
    }
    footer {
@@ -177,7 +280,7 @@
       }
       .main-img {
          margin-top: 30px;
-         height: 450px;
+         height: 300px;
       }
    }
    .advantages {
@@ -189,6 +292,9 @@
             width: 340px;
             margin: 20px auto 0 auto;
             justify-content: flex-start;
+            .advantage-text {
+               width: unset;
+            }
             
          }
       }
@@ -196,6 +302,18 @@
    .social {
       .wrapper {
          justify-content: space-between;
+         .social-text {
+            max-width: 250px;
+         }
+         
+      }
+   }
+   .discount {
+      .wrapper {
+         justify-content: space-between;
+         .discount-text {
+            max-width: 250px;
+         }
          
       }
    }
@@ -204,9 +322,10 @@
       .footer-maps {
          
          .footer-map {
+            width: 100%;
             iframe {
-               width: 450px;
-               height: 225px;
+               width: 100%;
+               height: 300px;
             }
          }
       }
@@ -238,16 +357,14 @@
       .wrapper {
          
          .social-text {
-            
-            margin-left: 0;
-            
+            max-width: 220px;
          }
       }
    }
    .discount {
       .wrapper {
          .discount-text {
-            margin-left: 0;
+            max-width: 220px;
             
          }
       }
@@ -275,6 +392,19 @@
          }
       }
    }
+   .about {
+      .about-items {
+         .about-items-benefits {
+            .benefits-items {
+               .benefits-item {
+                  span {
+                     max-width: 350px;
+                  }
+               }
+            }
+         }
+      }
+   }
 
 }
 
@@ -282,11 +412,37 @@
 /* 480 - 499 */
 @media screen and (max-width: 499px){
 
+   .about {
+      .about-items {
+         .about-items-benefits {
+            .benefits-items {
+               .benefits-item {
+                  span {
+                     max-width: 350px;
+                  }
+               }
+            }
+         }
+      }
+   }
 }
 
 
 /* 320 - 479 */
 @media screen and (max-width: 479px){
+   .about {
+      .about-items {
+         .about-items-benefits {
+            .benefits-items {
+               .benefits-item {
+                  span {
+                     max-width: 240px;
+                  }
+               }
+            }
+         }
+      }
+   }
    header {
       justify-content: space-between;
       #burger {
@@ -459,18 +615,47 @@
          }
       }
    }
-   .masters-block {
-      .master {
-         .master-img {
-            max-width: 290px;
-            max-height: 484px; 
-         }
-         .master-action {
-            padding: 10px 32px;
+   .masters {
+      .masters-block {
+         .master {
+            .master-img {
+               width: 292px;
+               height: 404px;
+            }
+            .master-action {
+               padding: 10px 32px;
+            }
          }
       }
    }
+   .masters {
+      .masters-title {
 
+      }
+      .masters-subtitle {
+      }
+      .masters-block {
+         .master {
+            &.slick-center {
+               .master-img.master-katya {
+
+                  .master-action {
+                     left: 58px;
+                  }
+                  
+                  
+               }
+               .master-img.master-aleks {
+
+                  .master-action {
+                     left: 58px;
+                  }
+                  
+               }   }
+         }
+      }
+   }
+   
 
 
    footer {
@@ -479,16 +664,32 @@
          
          .footer-map {
             iframe {
-               width: 250px;
-               height: 125px;
+               width: 100%;
+               height: 300px;
             }
          }
       }
+      .footer-by {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+         .footer-by-design {
+            margin-top: 30px;
+         }
+   
+      }
    }
-
+   .slick-prev {
+       top: 531px;
+   }
+   .slick-next {
+       top: 531px;
+   }
    .slick-dots li {
-      width: 16px;
-      height: 16px;
+      width: 18px;
+      height: 18px;
+      margin: 0 5px;
    }
    .slick-dots li.slick-active {
       width: 20px;

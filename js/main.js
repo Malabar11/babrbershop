@@ -1,15 +1,17 @@
 $(document).ready(() => {
   $('.masters-block').slick({
-    infinite: true,
     centerMode: true,
-    slidesToShow: 3,
-    arrows: true,
+    centerPadding: '60px',
+    slidesToShow: 5,
+    variableWidth: true,
+    variableHeight: true,
     dots: true,
     responsive: [
       {
         breakpoint: 1023,
         settings: {
-          arrows: false,
+          slidesToShow: 1,
+          arrows: true,
           centerMode: true,
           
         }
@@ -18,7 +20,7 @@ $(document).ready(() => {
         breakpoint: 768,
         settings: {
           slidesToShow: 1,
-          arrows: false,
+          arrows: true,
           centerMode: true,
           
         }
@@ -28,7 +30,7 @@ $(document).ready(() => {
         settings: {
           dots: true,
           slidesToShow: 1,
-          arrows: false,
+          arrows: true,
           centerMode: true,
           
         }
@@ -99,10 +101,10 @@ $(document).ready(() => {
         hasError = true;
       }
       
-      if (!name.val() || reserveService.val() == 'error' || !date.val() || !phone.val() || reserveMaster.val()  == 'error' || reserveTime.val()  == 'error') {
+      if (hasError) {
          return
       }
-      if (name.val() && reserveService.val() && date.val() && phone.val() && reserveMaster.val() && reserveTime.val()) {
+      if (!hasError) {
         $.ajax({
           type: 'POST',
           url: 'admin@barbershop.com ',
@@ -134,12 +136,15 @@ $(document).ready(() => {
 
       $('#burger').click(() => {
         $('.nav-list').addClass('open');
+        $('.header-nav').show();
       })
       document.querySelectorAll('.nav-list > *').forEach((item) => {
         item.onclick = () => {
           $('.nav-list').removeClass('open')
+          $('.header-nav').hide();
         }
      })
       
    
 });
+

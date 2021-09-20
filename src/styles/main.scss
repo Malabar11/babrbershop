@@ -289,7 +289,7 @@ header {
    .price-blocks {
       display: flex;
       justify-content: space-between;
-      background: url(../../img/price-bg.png) center ;
+      background: url(../img/price-bg.png) center ;
       background-repeat: no-repeat;
       .price-block-title {
          font-size: 25px;
@@ -388,17 +388,17 @@ header {
             
          }
          .master-katya {
-            background-image: url(../../img/katya-grey.png);
+            background-image: url(../img/katya-grey.png);
             background-repeat: no-repeat;
             background-position: center;
          }
          .master-aleks {
-            background-image: url(../../img/aleks-grey.png);
+            background-image: url(../img/aleks-grey.png);
             background-repeat: no-repeat;
             background-position: center;
          }
          .master-marat {
-            background-image: url(../../img/marat-grey.png);
+            background-image: url(../img/marat-grey.png);
             background-repeat: no-repeat;
             background-position: center;
          }
@@ -440,7 +440,7 @@ header {
                width: 460px;
                height: 477px;
                position: relative;
-               background-image: url(../../img/katya.png);
+               background-image: url(../img/katya.png);
                z-index: 100;
                background-size: contain;
                .master-action {
@@ -456,7 +456,7 @@ header {
                position: relative;
                z-index: 100;
                background-size: contain;
-               background-image: url(../../img/aleks.png);
+               background-image: url(../img/aleks.png);
                .master-action {
                   width: 345px;
                   left: 57px;
@@ -469,7 +469,7 @@ header {
                position: relative;
                z-index: 100;
                background-size: contain;
-               background-image: url(../../img/marat.png);
+               background-image: url(../img/marat.png);
                
             }
             .master-action {

@@ -445,7 +445,7 @@ header {
                background-size: contain;
                .master-action {
                   width: 345px;
-                  left: 57px;
+                  left: 58px;
                }
                
                
@@ -459,7 +459,7 @@ header {
                background-image: url(../img/aleks.png);
                .master-action {
                   width: 345px;
-                  left: 57px;
+                  left: 58px;
                }
                
             }
@@ -490,6 +490,9 @@ header {
          }
       }
    }
+}
+.slick-track {
+   transition: all 1s ease;
 }
 .slick-prev:before {
    content: url(../img/prev-arrow.png);

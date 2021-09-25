@@ -442,11 +442,12 @@ header {
                position: relative;
                background-image: url(../img/katya.png);
                z-index: 100;
-               background-size: contain;
-               .master-action {
+               background-size: cover;
+               background-position: top center;
+               /* .master-action {
                   width: 345px;
                   left: 58px;
-               }
+               } */
                
                
             }
@@ -455,12 +456,14 @@ header {
                height: 477px;
                position: relative;
                z-index: 100;
-               background-size: contain;
+               background-size: cover;
                background-image: url(../img/aleks.png);
-               .master-action {
+               background-position: top center;
+
+               /* .master-action {
                   width: 345px;
                   left: 58px;
-               }
+               } */
                
             }
             .master-img.master-marat {
@@ -468,7 +471,7 @@ header {
                height: 477px;
                position: relative;
                z-index: 100;
-               background-size: contain;
+               background-size: cover;
                background-image: url(../img/marat.png);
                
             }
